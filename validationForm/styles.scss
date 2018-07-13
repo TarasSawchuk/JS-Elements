@@ -1,0 +1,49 @@
+// Variables
+$bgc: rgb(78,81,168);
+$btn-color: rgb(132,119,88);
+$font-color: rgb(245,246,247);
+
+// general styles
+body {
+  background-color: $bgc;
+  width: 90vw;
+  height: 90vh;
+  font-family: "Quicksand";
+  color: $font-color;
+}
+
+// form styling
+form {
+  position: absolute;
+  top: 40%;
+  right: 40%;
+  left: 40%;
+}
+
+// input styling
+#number {
+  width: 40px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+// btn styling
+button {
+  width: 85px;
+  height: 22px;
+  border: none;
+  background-color: $btn-color;
+  color: $font-color;
+  border-radius: 5px;
+  font-family: "Quicksand";
+  font-weight: bold;
+  outline: none;
+  
+  &:hover {
+  border: 2px solid rgb(86,73,40);
+  transition: .3s;
+  }
+  &:active {
+  transform: scale(.9);
+  }
+}
