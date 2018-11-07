@@ -1,0 +1,53 @@
+/* 
+General styles 
+*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(78,81,168);
+  width: 90vw;
+  height: 90vh;
+  font-family: "Quicksand";
+  color: rgb(245,246,247);
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+#tabs .tab {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+#tabs .whiteborder {
+  border: 2px solid #707070;
+  border-bottom: 2px solid #fff;
+  border-radius: 20px 3px 0 0;
+}
+
+#tabs .tabContent {
+  width: 300px;
+  height: 60px;
+  border: 2px solid #707070;
+  position: relative;
+  top: -1px;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 0 0 3px 3px;
+}
+
+/* 
+Special pseudo classes for JavaScript  
+*/
+
+#tabs .hide {
+  display: none;
+}
+
+#tabs .show {
+  display: block;
+}
